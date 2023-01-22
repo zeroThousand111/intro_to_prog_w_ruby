@@ -1,6 +1,6 @@
 # input
 puts "How old are you?"
-age = gets.to_i
+age = gets.chomp.to_i
 
 # processing
 age_10 = age + 10
