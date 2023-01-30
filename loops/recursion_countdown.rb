@@ -4,13 +4,11 @@ input_number = gets.chomp.to_i
 
 # Define countdown method
 def countdown(number)
-  puts "#{number}"
-  number =-1
-  if number <= 0
-    break
-  else
-    countdown
-  end
+    while number > 1    
+      puts "#{number}"
+      number = number - 1
+      countdown(number)
+  end  
 end
 
 countdown(input_number)
