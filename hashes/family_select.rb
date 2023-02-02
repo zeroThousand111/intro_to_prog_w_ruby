@@ -4,5 +4,4 @@ family = {  uncles: ["bob", "joe", "steve"],
             aunts: ["mary","sally","susan"]
           }
 
-p family.select{|k,v| k == :sisters}
-p family.select{|k,v| k == :brothers}
+p family.select{|k,v| k == :sisters || k == :brothers}
