@@ -19,5 +19,3 @@ end
 favs_hash.each do |k, v| 
   puts "My favourite #{k} is #{v}."
 end
-
-
