@@ -18,4 +18,4 @@ check_word("elaborate")
 check_word("polar bear")
 
 # call the method on the array of words
-sample_words.each {|word| puts "#{word}"}
+sample_words.each {|word| if word =~ /lab/; puts "'#{word.upcase}' contains 'lab'" else puts "'#{word.upcase}' doesn't contain 'lab'" end}
