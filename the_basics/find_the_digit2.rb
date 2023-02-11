@@ -5,9 +5,9 @@ number = gets.chomp.to_i
 
 # process input number
 thousand_place_value = number / 1000
-hundred_place_value = number % 10 /100
-ten_place_value = 
-single_place_value = number % 10
+hundred_place_value = number % 1000 / 100
+ten_place_value = number % 1000 % 100 / 10
+single_place_value = number % 1000 % 100 % 10
 
 # output
 puts "Your number was #{number}."
