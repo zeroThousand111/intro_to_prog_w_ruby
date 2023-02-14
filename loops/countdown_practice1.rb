@@ -30,7 +30,21 @@ end
 =end
 
 # create a countdown from the number with a for loop.  N.B. This is also not a method.
-
+=begin
 for i in 1..x do
   puts x - i
 end
+=end
+
+# create a countdown from the number with recursion in a method (not a loop).  N.B. This is a method.
+
+def countdown(i)  
+  if i > 0
+    puts i
+    countdown(i - 1)
+  end
+  
+end
+
+# call the countdown method with recursion
+countdown(x)
